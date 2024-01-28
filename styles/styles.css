@@ -943,11 +943,11 @@ section {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 1432px) {
+@media screen and (max-width: 1632px) {
   .container {
     padding: 7rem 11rem;
   }
-
+  
   .contact-content-con {
     flex-direction: column;
   }
