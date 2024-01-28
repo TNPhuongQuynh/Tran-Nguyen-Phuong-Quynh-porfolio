@@ -106,8 +106,7 @@ section {
   height: 55px;
   border-radius: 12%;   
   display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: left;
   margin: 0.7rem 0;
   box-shadow: var(--box-shadow-1);
 }
@@ -120,8 +119,10 @@ section {
   background-color: var(--color-secondary);
   transition: all 0.4s ease-in-out;
 }
-.controls .active-btn i {
-  color: var(--color-white);
+.controls i,
+.control p {
+  color: #FFFFFF;
+  justify-content: center;
 }
 .controls .control {
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
@@ -313,8 +314,8 @@ section {
   padding-top: 30px;
   text-align: justify;
   font-size: 1rem;
-  text-transform:none;
-  
+  text-transform: none;
+  font-weight: normal;
 }
 .stat-title::before {
   content: "";
@@ -353,9 +354,10 @@ section {
   padding: auto;
 }
 .about-stats .progress-bars .progress-bar img{
-  width: 100%;
-  height: 80%;
+  width: 70%;
+  height: 55%;
   object-fit: contain;
+  margin-left: 40px;
 }
   
 
@@ -814,6 +816,8 @@ section {
   .theme-btn {
     width: 50px;
     height: 50px;
+    bottom: 10%;
+    right: 1%;
   }
 
   .header-content {
@@ -865,7 +869,12 @@ section {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
   }
-
+  .about-stats .progress-bars .progress-bar img{
+    width: 70%;
+    height: 55%;
+    object-fit: contain;
+    margin-left: 15px;
+  }
   .container {
     padding: 2rem 2.5rem !important;
   }
@@ -1076,15 +1085,23 @@ section {
     top: auto;
     bottom: 0;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     background-color: var(--color-grey-5);
+    overflow-x: scroll;
   }
   .controls .control {
     margin: 1rem 0.3rem;
+    display: flex;
   }
+  .controls .control i,
+  .controls .control p{
+    display: flex;
+    text-align: left;
+  }
+
 }
 @media screen and (max-width: 485px){
   .button-tong{
