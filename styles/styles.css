@@ -106,7 +106,6 @@ section {
   height: 55px;
   border-radius: 12%;   
   display: flex;
-  text-align: left;
   margin: 0.7rem 0;
   box-shadow: var(--box-shadow-1);
 }
@@ -143,7 +142,6 @@ section {
 }
 .controls .control i{
   text-align: left;
-
 }
 .theme-btn {
   bottom: 5%;
@@ -816,7 +814,7 @@ section {
   .theme-btn {
     width: 50px;
     height: 50px;
-    bottom: 10%;
+    bottom: 12%;
     right: 1%;
   }
 
@@ -1094,8 +1092,8 @@ section {
   .controls .control {
     margin: 1rem 0.3rem;
     display: flex;
+    width: 190px;
   }
-  .controls .control i,
   .controls .control p{
     display: flex;
     text-align: left;
